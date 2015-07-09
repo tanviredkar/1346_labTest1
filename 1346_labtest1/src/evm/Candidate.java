@@ -6,11 +6,22 @@ import java.util.List;
 public class Candidate {
 	private String name;
 	   private String logo;
-	   private int number;
+	   private int number=0;
 	   private List<Candidate> candidate;
        int votecount;
+       public Candidate(){
+    	   
+       }
 	   
-	   public Candidate(int number,String name,String logo,int votecount) {
+	   public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
+	public Candidate(int number,String name,String logo,int votecount) {
 	      this.number = number;
 	      this.name = name;
 	      this.logo = logo;
